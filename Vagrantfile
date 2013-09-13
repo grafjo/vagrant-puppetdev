@@ -13,8 +13,20 @@ Vagrant.configure("2") do |config|
   # doesn't already exist on the user's system.
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
-  # Configure hostname
-  config.vm.hostname = "vagrant.example.com"
+  config.vm.define "node1" do |node1|
+    node1.vm.hostname = "node1.example.com"
+    node1.vm.network :private_network, ip: "192.168.33.11"
+  end
+
+  config.vm.define "node2" do |node2|
+    node2.vm.hostname = "node2.example.com"
+    node2.vm.network :private_network, ip: "192.168.33.12"
+  end
+
+  config.vm.define "node3" do |node3|
+    node3.vm.hostname = "node3.example.com"
+    node3.vm.network :private_network, ip: "192.168.33.13"
+  end
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,

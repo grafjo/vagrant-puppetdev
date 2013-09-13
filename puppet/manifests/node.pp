@@ -1,9 +1,17 @@
 # define your required node configuration via puppet here
 #
-stage {"pre":
-  before => Stage["main"],
+
+node base {
+  class { "base": 
+    stage => "pre",
+  }
 }
 
-class {"base":
-  stage => "pre",
+node 'node1.example.com' inherits base {
+}
+
+node 'node2.example.com' inherits base {
+}
+
+node 'node3.example.com' inherits base {
 }
