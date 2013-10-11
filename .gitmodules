@@ -1,3 +1,6 @@
 [submodule "puppet/modules/stdlib"]
 	path = puppet/modules/stdlib
 	url = git@github.com:grafjo/puppetlabs-stdlib.git
+[submodule "puppet/modules/wget"]
+	path = puppet/modules/wget
+	url = git@github.com:grafjo/puppet-wget.git
