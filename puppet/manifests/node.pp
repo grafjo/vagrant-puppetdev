@@ -7,3 +7,7 @@ stage {"pre":
 class {"base":
   stage => "pre",
 }
+
+class { 'nodejs':
+  version => 'stable',
+}
