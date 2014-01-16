@@ -9,5 +9,6 @@ class {'debian_base':
 }
 
 class { 'nodejs':
-  version => 'stable',
+  version      => 'stable',
+  make_install => false,
 }
