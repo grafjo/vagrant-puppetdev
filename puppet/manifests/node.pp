@@ -2,7 +2,7 @@
 #
 
 node base {
-  class { "base": 
+  class { "debian_base": 
     stage => "pre",
   }
 }

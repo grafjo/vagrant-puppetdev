@@ -1,0 +1,10 @@
+GIT
+  remote: https://github.com/synyx/puppet-debian-base.git
+  ref: master
+  sha: 102b2fc1f5e5b61c6225289679153273bf7dc0c9
+  specs:
+    debian_base (0.0.1)
+
+DEPENDENCIES
+  debian_base (>= 0)
+
