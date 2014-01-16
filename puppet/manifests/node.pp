@@ -4,7 +4,7 @@ stage {"pre":
   before => Stage["main"],
 }
 
-class {"base":
+class {'debian_base':
   stage => "pre",
 }
 
