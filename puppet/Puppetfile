@@ -4,5 +4,5 @@ mod 'debian_base',
     :git => 'https://github.com/synyx/puppet-debian-base.git',
     :ref => 'master'
 
-mod 'willdurand/nodejs', "1.6.0"
+mod 'willdurand/nodejs', "1.6.1"
 
