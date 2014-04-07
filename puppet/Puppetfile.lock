@@ -1,3 +1,18 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    puppetlabs/apt (1.4.2)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/stdlib (4.1.0)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-java.git
+  ref: master
+  sha: 5380a9d1b548957fb38b38e31bd71c7f5f0f8d4d
+  specs:
+    java (1.1.0)
+      puppetlabs/stdlib (>= 0.1.6)
+
 GIT
   remote: https://github.com/synyx/puppet-debian-base.git
   ref: master
@@ -5,6 +20,37 @@ GIT
   specs:
     debian_base (0.0.1)
 
+GIT
+  remote: https://github.com/synyx/puppet-elasticsearch.git
+  ref: master
+  sha: 221ce9a957055f40a81955be61dea576840d9e97
+  specs:
+    elasticsearch (0.2.1)
+      puppetlabs/apt (>= 0.0.1)
+      puppetlabs/stdlib (>= 0.0.1)
+
+GIT
+  remote: https://github.com/synyx/puppet-graylog2.git
+  ref: master
+  sha: 9916b0e9a65000325c7276084c5f54ad05b6c746
+  specs:
+    graylog2 (0.4.1)
+      puppetlabs/apt (>= 0.0.1)
+      puppetlabs/stdlib (>= 0.0.1)
+
+GIT
+  remote: https://github.com/synyx/puppet-mongodb.git
+  ref: master
+  sha: f9748fde49bfad26da71483db7e22fa324637acb
+  specs:
+    mongodb (0.2.0)
+      puppetlabs/apt (>= 0.0.1)
+      puppetlabs/stdlib (>= 0.0.1)
+
 DEPENDENCIES
   debian_base (>= 0)
+  elasticsearch (>= 0)
+  graylog2 (>= 0)
+  java (>= 0)
+  mongodb (>= 0)
 
