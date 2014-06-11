@@ -43,6 +43,8 @@ cd ../vagrant
 vagrant up
 ```
 
+Now you have to wait! After a few minutes graylog2 setup is ready and you can start working with graylog2. The webinterface is running on http://192.168.33.10:9000 login with admin/admin
+
 
 License
 -------
