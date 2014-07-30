@@ -4,7 +4,7 @@ mod 'debian_base',
     :git => 'https://github.com/synyx/puppet-debian-base.git',
     :ref => 'master'
 
-mod 'synyx/graylog2', '0.5.0'
+mod 'synyx/graylog2', '0.5.1'
 
 mod 'synyx/elasticsearch', '0.3.0'
 
