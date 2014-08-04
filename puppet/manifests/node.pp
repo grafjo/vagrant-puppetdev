@@ -48,4 +48,32 @@ node 'vagrant.example.com' {
     graylog2_server_uris => ["http://192.168.33.10:12900/"],
   }
 
+
+  class { 'apache':
+    default_vhost     => false,
+    default_ssl_vhost => false,
+  }
+
+  apache::vhost { 'graylog2':
+    port          => 80,
+    default_vhost => true,
+    docroot       => '/var/www/html',
+    vhost_name    => '*',
+    rewrites      => [{
+        rewrite_cond => ['%{SERVER_PORT} !^443$'],
+        rewrite_rule => ['^/(.*) https://%{HTTP_HOST}/$1 [NC,R,L]']
+    }],
+  }
+
+  apache::vhost { 'graylog2-ssl':
+    port       => 443,
+    ssl        => true,
+    docroot    => '/var/www/html',
+    vhost_name => '*',
+    proxy_pass => [{
+        'path' => '/',
+        'url'  => 'http://192.168.33.10:9000/'
+    }],
+  }
+
 }
