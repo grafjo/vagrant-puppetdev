@@ -7,3 +7,6 @@ stage {"pre":
 class {'debian_base':
   stage => "pre",
 }
+
+
+class {'sshguard':}

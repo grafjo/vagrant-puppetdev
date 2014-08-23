@@ -1,3 +1,10 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    grafjo-sshguard (0.2.1)
+      puppetlabs-stdlib (>= 0.0.1)
+    puppetlabs-stdlib (4.3.2)
+
 GIT
   remote: https://github.com/synyx/puppet-debian-base.git
   ref: master
@@ -7,4 +14,5 @@ GIT
 
 DEPENDENCIES
   debian_base (>= 0)
+  grafjo-sshguard (= 0.2.1)
 
