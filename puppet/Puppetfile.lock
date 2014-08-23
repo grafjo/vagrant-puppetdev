@@ -1,48 +1,30 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
-    puppetlabs/apt (1.5.0)
-      puppetlabs/stdlib (>= 2.2.1)
-    puppetlabs/stdlib (4.2.2)
-
-GIT
-  remote: https://github.com/puppetlabs/puppetlabs-java.git
-  ref: master
-  sha: a089f326ca3a975724cb492e1606fc1261e47921
-  specs:
-    java (1.1.1)
-      puppetlabs/stdlib (>= 0.1.6)
-
-GIT
-  remote: https://github.com/synyx/puppet-elasticsearch.git
-  ref: master
-  sha: 62ae719c16722c72f3e4eaea90ff545cca35373d
-  specs:
-    elasticsearch (0.3.0)
-      puppetlabs/apt (>= 0.0.1)
-      puppetlabs/stdlib (>= 0.0.1)
-
-GIT
-  remote: https://github.com/synyx/puppet-graylog2.git
-  ref: master
-  sha: 8b828edce6bf18a7cf7fce26b48aee2a53869cba
-  specs:
-    graylog2 (0.5.0)
-      puppetlabs/apt (>= 0.0.1)
-      puppetlabs/stdlib (>= 0.0.1)
-
-GIT
-  remote: https://github.com/synyx/puppet-mongodb.git
-  ref: master
-  sha: e8c52c16393d1b26babd72bf721fca3ca00b1a8d
-  specs:
-    mongodb (0.4.0)
-      puppetlabs/apt (>= 0.0.1)
-      puppetlabs/stdlib (>= 0.0.1)
+    puppetlabs-apache (1.1.1)
+      puppetlabs-concat (>= 1.0.0)
+      puppetlabs-stdlib (>= 2.4.0)
+    puppetlabs-apt (1.6.0)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-concat (1.1.0)
+      puppetlabs-stdlib (>= 4.0.0)
+    puppetlabs-java (1.1.1)
+      puppetlabs-stdlib (>= 0.1.6)
+    puppetlabs-stdlib (4.3.2)
+    synyx-elasticsearch (0.3.0)
+      puppetlabs-apt (>= 0.0.1)
+      puppetlabs-stdlib (>= 0.0.1)
+    synyx-graylog2 (0.5.1)
+      puppetlabs-apt (>= 0.0.1)
+      puppetlabs-stdlib (>= 0.0.1)
+    synyx-mongodb (0.4.0)
+      puppetlabs-apt (>= 0.0.1)
+      puppetlabs-stdlib (>= 0.0.1)
 
 DEPENDENCIES
-  elasticsearch (>= 0)
-  graylog2 (>= 0)
-  java (>= 0)
-  mongodb (>= 0)
+  puppetlabs-apache (= 1.1.1)
+  puppetlabs-java (>= 0)
+  synyx-elasticsearch (= 0.3.0)
+  synyx-graylog2 (= 0.5.1)
+  synyx-mongodb (= 0.4.0)
 

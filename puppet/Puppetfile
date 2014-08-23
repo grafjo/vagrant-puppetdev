@@ -1,17 +1,12 @@
 forge "https://forgeapi.puppetlabs.com"
 
-mod 'graylog2',
-    :git => 'https://github.com/synyx/puppet-graylog2.git',
-    :ref => 'master'
+mod 'synyx/graylog2', '0.5.1'
 
-mod 'elasticsearch',
-    :git => 'https://github.com/synyx/puppet-elasticsearch.git',
-    :ref => 'master'
+mod 'synyx/elasticsearch', '0.3.0'
 
-mod 'mongodb',
-    :git => 'https://github.com/synyx/puppet-mongodb.git',
-    :ref => 'master'
+mod 'synyx/mongodb', '0.4.0'
 
-mod 'java',
-    :git => 'https://github.com/puppetlabs/puppetlabs-java.git',
-    :ref => 'master'
+mod 'puppetlabs/java'
+
+mod 'puppetlabs/apache', '1.1.1'
+
